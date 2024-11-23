@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+
+    <title>Save the Ocean</title>
+    <link rel="stylesheet" href="SurveyForm-styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="ima-survey/page-icon/favicon.ico" type="image/x-icon">
+  </head>
+  
+  <body>
+    <div class="contenido">
+      <div class="encabezado">
+        <h1 id="title">Help Us Save Marine Animals: Your Voice Matters!</h1>
+        <div class="description-space">
+          <p id="description" class="description">Together, we can create a healthier future for our oceans</p>
+          <p class="description">Thank you for participating!</p>
+        </div>
+      </div>
+      
+      <form id="survey-form" class="survey-form">
+        <div class="name line-design">
+          <label class="category" id="name-label">Name</label>
+          <input class="bar-design" placeholder="Enter your name" type="text" id="name" required>
+        </div>
+        <div class="email line-design">
+          <label class="category" id="email-label">Email</label>
+          <input class="bar-design" placeholder="Enter your Email" type="email" id="email" required>
+        </div>
+        <div class="age line-design">
+          <label class="category" id="number-label">Age</label>
+          <input class="bar-design" placeholder="Enter your Age" type="number" id="number" min="16" max="101">
+        </div>
+
+        <div class="dropdown line-design">
+          <p class="category">What do you think is the biggest threat to marine life?</p>
+          <select id="dropdown" class="drop bar-design">
+            <option disabled selected value>Option</option>
+            <option value="opt1">Plastic pollution</option>
+            <option value="opt2">Overfishing</option>
+            <option value="other">Climate change</option>
+            <option value="other">Oil spills</option>
+            <option value="other">Ocean acidification</option>
+          </select>
+        </div>
+        <div class="radio-buttons line-design">
+          <p class="category">Would you like to participate in marine conservation activities?</p>
+          <label class="button-label two-elements-design">
+            <input name="radio-button-input" type="radio" value="yes" checked>
+            Yes
+          </label>
+          <label class="button-label two-elements-design">
+            <input name="radio-button-input" type="radio" value="no">
+            No
+          </label>
+          <label class="button-label two-elements-design">
+            <input name="radio-button-input" type="radio" value="maybe">
+            Maybe
+          </label>
+        </div>
+        <div class="checkboxes line-design">
+          <p class="category">What actions have you taken or would you be willing to take to protect marine life? (Select all that apply)</p>
+          <label class="checkbox-label two-elements-design">
+            <input type="checkbox" value="plastic-use">
+            Reduce plastic use
+          </label>
+          <label class="checkbox-label two-elements-design">
+            <input type="checkbox" value="marine-conservation">
+            Support marine conservation organizations
+          </label>
+          <label class="checkbox-label two-elements-design">
+            <input type="checkbox" value="beach-clean-up">
+            Participate in beach cleanups
+          </label>
+          <label class="checkbox-label two-elements-design">
+            <input type="checkbox" value="fishing-impact">
+            Learn more about the impact of fishing
+          </label>
+          <label class="checkbox-label two-elements-design">
+            <input type="checkbox" value="share-info">
+            Share information on social media
+          </label>
+        </div>
+        <div class="enter-text line-design">
+          <p class="category">Do you have any ideas or suggestions on how we can help save marine animals?</p>
+          <div class="text-area-center">
+            <textarea class="textarea" id="text-area" rows="5" cols="30" placeholder="Your input matters! Tell us your ideas..."></textarea>
+          </div>
+          <div class="button-space">
+            <button class="submit-button" id="submit" type="submit">SUBMIT</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

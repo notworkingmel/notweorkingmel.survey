@@ -1,0 +1,112 @@
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+
+  margin: 0;
+}
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background-image: url(https://i.pinimg.com/564x/a5/3d/69/a53d69b51db1d4929a707c117e8b89b5.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+p, h1, label {
+  margin: 0;
+  color: #eef4ed;
+}
+.contenido {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  background-color: #0f2b4b6b;
+  padding: 30px;
+}
+.encabezado {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+
+  justify-content: center;
+  align-items: center;
+}
+.description-space {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.survey-form {
+  width: 600px;
+  background-color: #204774;
+  opacity: 0.9;
+  padding: 35px 25px 20px 25px;
+  border-radius: 20px;
+}
+.line-design {
+  margin-bottom: 15px;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.bar-design, .textarea {
+  padding: 8px;
+  border: 1px solid rgb(208, 208, 208);
+  border-radius: 6px;
+}
+select, option, input, .button-label, .checkbox-label, textarea {
+  font-family: "Poppins", sans-serif;
+}
+option, select {
+  color: rgb(119, 118, 118);
+  margin: 3px;
+}
+.category {
+  font-weight: 600;
+}
+.text-area-center {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+.textarea {
+  width: 90%;
+}
+.button-space {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.submit-button {
+  width: 20%;
+  padding: 8px;
+  border: none;
+  border-radius: 6px;
+  background-color: #8da9c4;
+
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #eef4ed;
+
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+.submit-button:hover {
+  background-color: #7d96ae;
+}
